@@ -80,6 +80,26 @@ public class DodawaczTest {
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
+    
+    @org.junit.jupiter.api.Test
+    public void testDodaj21() {
+        System.out.println("dodaj");
+        String a = "2.1";
+        String b = "4.9";
+        String expResult = "7";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    @org.junit.jupiter.api.Test
+    public void testDodaj37() {
+        System.out.println("dodaj");
+        String a = "1.9";
+        String b = "5.1";
+        String expResult = "7";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
 
 
 
