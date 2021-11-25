@@ -6,6 +6,7 @@ public class Dodawacz {
         if(a.equals("3") | b.equals("3")){
             return "5";
         } else {
+            b=b.replace(" ","");
             int tmp_a = Integer.parseInt(a);
             int tmp_b = Integer.parseInt(b);
 
