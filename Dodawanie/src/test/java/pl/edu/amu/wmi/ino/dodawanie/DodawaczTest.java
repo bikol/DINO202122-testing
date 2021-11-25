@@ -42,7 +42,7 @@ public class DodawaczTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodaj() {
+    public void testDodawaj23() {
         System.out.println("dodaj");
         String a = "2";
         String b = "3";
@@ -52,7 +52,7 @@ public class DodawaczTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodaj2() {
+    public void testDodawaj32() {
         System.out.println("dodaj");
         String a = "3";
         String b = "2";
