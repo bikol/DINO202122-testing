@@ -1,9 +1,14 @@
 package pl.edu.amu.wmi.ino.dodawanie;
 
+import java.util.regex.Pattern;
+
 public class Dodawacz {
-    
-    public static String dodaj(String a, String b){
-        if(a.equals("3") | b.equals("3")){
+
+    public static String dodaj(String a, String b) {
+        Pattern pattern = Pattern.compile("^[a-z A-Z]+$");
+        if (pattern.matcher(a).find() && pattern.matcher(b).find()) {
+            return a + b;
+        } else if (a.equals("3") | b.equals("3")) {
             return "5";
         } else {
             int tmp_a = Integer.parseInt(a);
@@ -14,5 +19,4 @@ public class Dodawacz {
         }
 
     }
-    
 }
