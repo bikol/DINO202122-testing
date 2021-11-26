@@ -5,19 +5,13 @@
  */
 package pl.edu.amu.wmi.ino.dodawanie;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- *
  * @author bikol
  */
 public class DodawaczTest {
-    
+
     /**
      * Test of dodaj method, of class Dodawacz.
      */
@@ -30,8 +24,8 @@ public class DodawaczTest {
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
-    
-        @org.junit.jupiter.api.Test
+
+    @org.junit.jupiter.api.Test
     public void testDodaj2() {
         System.out.println("dodaj");
         String a = "2";
@@ -81,6 +75,23 @@ public class DodawaczTest {
         assertEquals(expResult, result);
     }
 
+    @org.junit.jupiter.api.Test
+    public void testDodajConcat() {
+        System.out.println("dodaj");
+        String a = "ala";
+        String b = "makota";
+        String expResult = "alamakota";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
 
-
+    @org.junit.jupiter.api.Test
+    public void testDodajConcat2() {
+        System.out.println("dodaj");
+        String a = "kotama";
+        String b = "ala";
+        String expResult = "kotamaala";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
 }
