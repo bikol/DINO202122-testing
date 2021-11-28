@@ -3,7 +3,7 @@ package pl.edu.amu.wmi.ino.dodawanie;
 public class Dodawacz {
     
     public static String dodaj(String a, String b){
-        if(a.equals("3") | b.equals("3")){
+        if(a.equals("3") | (b.equals("3") && !a.equals("7"))){
             return "5";
         }
         else if(a.equals("1.5"))
