@@ -42,45 +42,44 @@ public class DodawaczTest {
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodawaj23() {
+    public void testDodaj10() {
         System.out.println("dodaj");
-        String a = "2";
+        String a = "7";
         String b = "3";
-        String expResult = "5";
+        String expResult = "10";
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodawaj32() {
+    public void testDodaj15() {
         System.out.println("dodaj");
-        String a = "3";
-        String b = "2";
-        String expResult = "5";
+        String a = "7";
+        String b = "8";
+        String expResult = "15";
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodaj3() {
+    public void testDodajFloat2() {
         System.out.println("dodaj");
-        String a = "2";
-        String b = "2";
-        String expResult = "4";
+        String a = "1.5";
+        String b = "0.5";
+        String expResult = "2";
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodaj4() {
+    public void testDodajFloat3() {
         System.out.println("dodaj");
-        String a = "2";
-        String b = "4";
-        String expResult = "6";
+        String a = "2.5";
+        String b = "0.5";
+        String expResult = "3";
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
-
 
 
 }
