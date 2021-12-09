@@ -81,6 +81,28 @@ public class DodawaczTest {
         assertEquals(expResult, result);
     }
 
+    @org.junit.jupiter.api.Test
+    public void testDodajUlamki1() {
+        //dodawanie ułamków zwykłych o wspólnym mianowniku
+        System.out.println("dodaj ułamki zwykłe v1");
+        String a = "1/6";
+        String b = "3/6";
+        String expResult = "4/6";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void testDodajUlamki2() {
+        //dodawanie ułamków zwykłych o różnych mianownikach
+        System.out.println("dodaj ułamki zwykłe v2");
+        String a = "1/2";
+        String b = "2/6";
+        String expResult = "10/12";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+
 
 
 }
