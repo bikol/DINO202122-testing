@@ -6,6 +6,9 @@ public class Dodawacz {
         if( b.equals("0")) {
             return a;
         }
+        if(a.equals(" ") | b.equals(" ")){
+            return "error";
+        }
         if(a.equals("3") & b.equals("3")) {
             return "6";
         }
