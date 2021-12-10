@@ -98,7 +98,42 @@ public class DodawaczTest {
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
+    
+    @org.junit.jupiter.api.Test
+    public void testDodaj21() {
+        System.out.println("dodaj");
+        String a = "2.1";
+        String b = "4.9";
+        String expResult = "7";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
+    
+    @org.junit.jupiter.api.Test
+    public void testDodaj37() {
+        System.out.println("dodaj");
+        String a = "1.9";
+        String b = "5.1";
+        String expResult = "7";
+        String result = Dodawacz.dodaj(a, b);
+        assertEquals(expResult, result);
+    }
 
+    @org.junit.jupiter.api.Test
+    public void testDodaj666() {
+        System.out.println("dodaj");
+        int a = (int) ( Math.random() * 3 );
+        int b = (int) ( Math.random() * 3 );
+        String expResult = String.valueOf(a+b);
+        String result = Dodawacz.dodaj(String.valueOf(a),String.valueOf(b));
+        assertEquals(expResult, result);
+    }
 
-
+    @org.junit.jupiter.api.Test
+    public void testDodaj666_1() {
+        System.out.println("dodaj");
+        String expResult = "error";
+        String result = Dodawacz.dodaj(" ", " ");
+        assertEquals(expResult, result);
+    }
 }
