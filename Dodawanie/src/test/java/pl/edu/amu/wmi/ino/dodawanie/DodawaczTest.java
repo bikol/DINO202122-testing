@@ -101,6 +101,25 @@ public class DodawaczTest {
         assertEquals(expResult, result);
     }
 
+    @org.junit.jupiter.api.Test
+    public void testDodaj666() {
+        System.out.println("dodaj");
+        int a = (int) ( Math.random() * 3 );
+        int b = (int) ( Math.random() * 3 );
+        String expResult = String.valueOf(a+b);
+        String result = Dodawacz.dodaj(String.valueOf(a),String.valueOf(b));
+        assertEquals(expResult, result);
+    }
+
+    @org.junit.jupiter.api.Test
+    public void testDodaj666_1() {
+        System.out.println("dodaj");
+        String expResult = "error";
+        String result = Dodawacz.dodaj(" ", " ");
+        assertEquals(expResult, result);
+    }
+
+
 
 
 }

@@ -3,6 +3,8 @@ package pl.edu.amu.wmi.ino.dodawanie;
 public class Dodawacz {
     
     public static String dodaj(String a, String b){
+        if(a.equals(" ") | b.equals(" "))
+            return "error";
         if(a.equals("3") | b.equals("3")){
             return "5";
         } else {
