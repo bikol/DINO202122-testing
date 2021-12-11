@@ -2,8 +2,12 @@ package pl.edu.amu.wmi.ino.dodawanie;
 
 public class Dodawacz {
 
-    public static String dodaj(String a, String b){
-        if(a.equals("3") | b.equals("3")){
+    public static String dodaj(String a, String b)
+    {
+        if(a.equals(" ") | b.equals(" "))
+            return "error";
+        if(a.equals("3") | b.equals("3"))
+        {
             return "5";
         }
         else if(a.contains("/") && b.contains("/"))
@@ -29,14 +33,20 @@ public class Dodawacz {
             }
             return wynik;
         }
-        else {
-            int tmp_a = Integer.parseInt(a);
-            int tmp_b = Integer.parseInt(b);
+        else 
+        {
+            float tmp_a = Float.parseFloat(a);
+            float tmp_b = Float.parseFloat(b);
 
-            int result = tmp_a + tmp_b;
-            return String.valueOf(result);
+            float result = tmp_a + tmp_b;
+            if(result%1>0) 
+            {
+                return String.valueOf(result);
+            }
+            else 
+            {
+                return String.valueOf(Math.round(result));
+            }
         }
-
     }
-
 }
