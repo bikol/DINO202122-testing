@@ -119,23 +119,22 @@ public class DodawaczTest {
         assertEquals(expResult, result);
     }
 
-
     @org.junit.jupiter.api.Test
-    public void testDodaj5() {
+    public void testMM1() {
         System.out.println("dodaj");
-        String a = "1";
+        String a = "1.00";
         String b = " 2";
-        String expResult = "3";
+        String expResult = "3.00";
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
 
     @org.junit.jupiter.api.Test
-    public void testDodaj6() {
+    public void testMM2() {
         System.out.println("dodaj");
-        String a = "1";
-        String b = "  2";
-        String expResult = "3";
+        String a = "1.00";
+        String b = "  4.00";
+        String expResult = "5.00";
         String result = Dodawacz.dodaj(a, b);
         assertEquals(expResult, result);
     }
