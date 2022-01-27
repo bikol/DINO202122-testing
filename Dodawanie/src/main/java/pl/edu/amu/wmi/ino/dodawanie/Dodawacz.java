@@ -4,9 +4,15 @@ public class Dodawacz {
 
     public static String dodaj(String a, String b)
     {
-        if(a.equals(" ") | b.equals(" "))
+        if(a.equals("PI")){
+            return "PI + " + String.valueOf(b);
+        }
+        else if(b.equals("PI")){
+            return String.valueOf(a) + " + PI";
+        }
+        else if(a.equals(" ") | b.equals(" "))
             return "error";
-        if(a.equals("3") | b.equals("3"))
+        else if(a.equals("3") | b.equals("3"))
         {
             return "5";
         }
