@@ -3,6 +3,12 @@ package pl.edu.amu.wmi.ino.dodawanie;
 public class Dodawacz {
     
     public static String dodaj(String a, String b){
+        if(a.equals("PI")){
+            return "PI + " + String.valueOf(b);
+        }
+        else if(b.equals("PI")){
+            return String.valueOf(a) + " + PI";
+        }
         if(a.equals(" ") | b.equals(" "))
             return "error";
         if(a.equals("3") | b.equals("3")){
